@@ -51,6 +51,7 @@
 		F33CA3511B6E97A4004D3085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33CA3561B6E97A5004D3085 /* ProsummaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProsummaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35C57F81B6E990700340013 /* ProsummaTestsOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProsummaTestsOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		F35C57FF1B6E9AE900340013 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		F31C9AB91B6E80DC00B322A9 = {
 			isa = PBXGroup;
 			children = (
+				F35C57FF1B6E9AE900340013 /* LICENSE */,
 				F31C9AC51B6E80DC00B322A9 /* Prosumma */,
 				F31C9AD11B6E80DC00B322A9 /* ProsummaTests */,
 				F33CA34E1B6E97A4004D3085 /* Prosumma */,
