@@ -108,9 +108,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F31C9AC21B6E80DC00B322A9 /* Prosumma */ = {
+		F31C9AC21B6E80DC00B322A9 /* ProsummaiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F31C9AD71B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "Prosumma" */;
+			buildConfigurationList = F31C9AD71B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaiOS" */;
 			buildPhases = (
 				F31C9ABE1B6E80DC00B322A9 /* Sources */,
 				F31C9ABF1B6E80DC00B322A9 /* Frameworks */,
@@ -121,14 +121,14 @@
 			);
 			dependencies = (
 			);
-			name = Prosumma;
+			name = ProsummaiOS;
 			productName = Prosumma;
 			productReference = F31C9AC31B6E80DC00B322A9 /* Prosumma.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F31C9ACC1B6E80DC00B322A9 /* ProsummaTests */ = {
+		F31C9ACC1B6E80DC00B322A9 /* ProsummaTestsiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F31C9ADA1B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaTests" */;
+			buildConfigurationList = F31C9ADA1B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaTestsiOS" */;
 			buildPhases = (
 				F31C9AC91B6E80DC00B322A9 /* Sources */,
 				F31C9ACA1B6E80DC00B322A9 /* Frameworks */,
@@ -139,7 +139,7 @@
 			dependencies = (
 				F31C9AD01B6E80DC00B322A9 /* PBXTargetDependency */,
 			);
-			name = ProsummaTests;
+			name = ProsummaTestsiOS;
 			productName = ProsummaTests;
 			productReference = F31C9ACD1B6E80DC00B322A9 /* ProsummaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -174,8 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F31C9AC21B6E80DC00B322A9 /* Prosumma */,
-				F31C9ACC1B6E80DC00B322A9 /* ProsummaTests */,
+				F31C9AC21B6E80DC00B322A9 /* ProsummaiOS */,
+				F31C9ACC1B6E80DC00B322A9 /* ProsummaTestsiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +220,7 @@
 /* Begin PBXTargetDependency section */
 		F31C9AD01B6E80DC00B322A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F31C9AC21B6E80DC00B322A9 /* Prosumma */;
+			target = F31C9AC21B6E80DC00B322A9 /* ProsummaiOS */;
 			targetProxy = F31C9ACF1B6E80DC00B322A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,7 +326,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.Prosumma;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Prosumma;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -342,7 +342,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.Prosumma;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Prosumma;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -354,7 +354,7 @@
 				INFOPLIST_FILE = ProsummaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.ProsummaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ProsummaTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -366,7 +366,7 @@
 				INFOPLIST_FILE = ProsummaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.ProsummaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ProsummaTests;
 			};
 			name = Release;
 		};
@@ -382,21 +382,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F31C9AD71B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "Prosumma" */ = {
+		F31C9AD71B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F31C9AD81B6E80DC00B322A9 /* Debug */,
 				F31C9AD91B6E80DC00B322A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F31C9ADA1B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaTests" */ = {
+		F31C9ADA1B6E80DC00B322A9 /* Build configuration list for PBXNativeTarget "ProsummaTestsiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F31C9ADB1B6E80DC00B322A9 /* Debug */,
 				F31C9ADC1B6E80DC00B322A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
