@@ -15,6 +15,9 @@
 		F31C9AE11B6E80FB00B322A9 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 		F33CA3501B6E97A4004D3085 /* Prosumma.h in Headers */ = {isa = PBXBuildFile; fileRef = F33CA34F1B6E97A4004D3085 /* Prosumma.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F33CA3571B6E97A5004D3085 /* Prosumma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33CA34D1B6E97A4004D3085 /* Prosumma.framework */; };
+		F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
+		F35C57FE1B6E99B400340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		F33CA34F1B6E97A4004D3085 /* Prosumma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prosumma.h; sourceTree = "<group>"; };
 		F33CA3511B6E97A4004D3085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33CA3561B6E97A5004D3085 /* ProsummaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProsummaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35C57F81B6E990700340013 /* ProsummaTestsOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProsummaTestsOSX-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		F31C9AD11B6E80DC00B322A9 /* ProsummaTests */ = {
 			isa = PBXGroup;
 			children = (
+				F35C57F81B6E990700340013 /* ProsummaTestsOSX-Bridging-Header.h */,
 				F31C9AD21B6E80DC00B322A9 /* ProsummaTests.swift */,
 				F31C9AD41B6E80DC00B322A9 /* Info.plist */,
 			);
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33CA3501B6E97A4004D3085 /* Prosumma.h in Headers */,
+				F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35C57FE1B6E99B400340013 /* PROKeyValueObservation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +546,7 @@
 		F33CA3601B6E97A5004D3085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ProsummaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -545,12 +554,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.ProsummaTests;
 				PRODUCT_NAME = ProsummaTests;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProsummaTests/ProsummaTestsOSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F33CA3611B6E97A5004D3085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ProsummaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -558,6 +570,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.ProsummaTests;
 				PRODUCT_NAME = ProsummaTests;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProsummaTests/ProsummaTestsOSX-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -598,6 +611,7 @@
 				F33CA35F1B6E97A5004D3085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F33CA3631B6E97A5004D3085 /* Build configuration list for PBXNativeTarget "ProsummaTestsOSX" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +620,7 @@
 				F33CA3611B6E97A5004D3085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
