@@ -13,7 +13,6 @@
 		F31C9ADF1B6E80FB00B322A9 /* PROKeyValueObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F31C9AE01B6E80FB00B322A9 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 		F31C9AE11B6E80FB00B322A9 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
-		F33CA3501B6E97A4004D3085 /* Prosumma.h in Headers */ = {isa = PBXBuildFile; fileRef = F33CA34F1B6E97A4004D3085 /* Prosumma.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F33CA3571B6E97A5004D3085 /* Prosumma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33CA34D1B6E97A4004D3085 /* Prosumma.framework */; };
 		F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
@@ -47,8 +46,6 @@
 		F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROKeyValueObservation.h; sourceTree = "<group>"; };
 		F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROKeyValueObservation.m; sourceTree = "<group>"; };
 		F33CA34D1B6E97A4004D3085 /* Prosumma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prosumma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F33CA34F1B6E97A4004D3085 /* Prosumma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prosumma.h; sourceTree = "<group>"; };
-		F33CA3511B6E97A4004D3085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33CA3561B6E97A5004D3085 /* ProsummaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProsummaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35C57F81B6E990700340013 /* ProsummaTestsOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProsummaTestsOSX-Bridging-Header.h"; sourceTree = "<group>"; };
 		F35C57FF1B6E9AE900340013 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -94,7 +91,6 @@
 				F35C57FF1B6E9AE900340013 /* LICENSE */,
 				F31C9AC51B6E80DC00B322A9 /* Prosumma */,
 				F31C9AD11B6E80DC00B322A9 /* ProsummaTests */,
-				F33CA34E1B6E97A4004D3085 /* Prosumma */,
 				F31C9AC41B6E80DC00B322A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,15 +127,6 @@
 			path = ProsummaTests;
 			sourceTree = "<group>";
 		};
-		F33CA34E1B6E97A4004D3085 /* Prosumma */ = {
-			isa = PBXGroup;
-			children = (
-				F33CA34F1B6E97A4004D3085 /* Prosumma.h */,
-				F33CA3511B6E97A4004D3085 /* Info.plist */,
-			);
-			path = Prosumma;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -156,7 +143,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33CA3501B6E97A4004D3085 /* Prosumma.h in Headers */,
 				F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +387,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,6 +440,7 @@
 		F31C9AD81B6E80DC00B322A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -463,12 +451,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.Prosumma;
 				PRODUCT_NAME = Prosumma;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F31C9AD91B6E80DC00B322A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -508,6 +498,7 @@
 		F33CA35E1B6E97A5004D3085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -522,12 +513,14 @@
 				PRODUCT_NAME = Prosumma;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F33CA35F1B6E97A5004D3085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
