@@ -19,6 +19,7 @@
 		F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 		F35C57FE1B6E99B400340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
+		F39C7A731B718E24008DB31C /* Prosumma.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9AC61B6E80DC00B322A9 /* Prosumma.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39C7A731B718E24008DB31C /* Prosumma.h in Headers */,
 				F35C57FC1B6E994200340013 /* PROKeyValueObservation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
