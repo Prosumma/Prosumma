@@ -13,7 +13,7 @@ extension String {
         var result = ""
         for character in unicodeScalars {
             if characterSet.longCharacterIsMember(character.value) {
-                result.extend(replacement)
+                result.appendContentsOf(replacement)
             } else {
                 result.append(character)
             }
