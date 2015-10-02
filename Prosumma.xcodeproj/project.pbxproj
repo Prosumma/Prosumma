@@ -28,6 +28,10 @@
 		F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 		F35C57FE1B6E99B400340013 /* PROKeyValueObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */; };
 		F39C7A731B718E24008DB31C /* Prosumma.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C9AC61B6E80DC00B322A9 /* Prosumma.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3EC1B631BBED96000FCA590 /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EC1B641BBED96000FCA590 /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EC1B651BBED96000FCA590 /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EC1B661BBED96000FCA590 /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,7 @@
 		F35A561C1B7C448D00F3BC2C /* NSCharacterSetExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCharacterSetExtensions.swift; sourceTree = "<group>"; };
 		F35C57F81B6E990700340013 /* ProsummaTestsOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProsummaTestsOSX-Bridging-Header.h"; sourceTree = "<group>"; };
 		F35C57FF1B6E9AE900340013 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 				F35A561C1B7C448D00F3BC2C /* NSCharacterSetExtensions.swift */,
 				F31C9ADD1B6E80FB00B322A9 /* PROKeyValueObservation.h */,
 				F31C9ADE1B6E80FB00B322A9 /* PROKeyValueObservation.m */,
+				F3EC1B621BBED96000FCA590 /* RangeExtensions.swift */,
 				F34AAB721B715C0400DE962C /* UITableViewCellExtensions.swift */,
 				F34AAB761B71601100DE962C /* UITableViewExtensions.swift */,
 				F31C9AC81B6E80DC00B322A9 /* Info.plist */,
@@ -325,6 +331,7 @@
 				F34AAB771B71601100DE962C /* UITableViewExtensions.swift in Sources */,
 				F31C9AE01B6E80FB00B322A9 /* PROKeyValueObservation.m in Sources */,
 				F35A561D1B7C448D00F3BC2C /* NSCharacterSetExtensions.swift in Sources */,
+				F3EC1B631BBED96000FCA590 /* RangeExtensions.swift in Sources */,
 				F34AAB731B715C0400DE962C /* UITableViewCellExtensions.swift in Sources */,
 				F35A56181B7BA52400F3BC2C /* StringExtensions.swift in Sources */,
 			);
@@ -337,6 +344,7 @@
 				F35A56191B7BA52400F3BC2C /* StringExtensions.swift in Sources */,
 				F31C9AE11B6E80FB00B322A9 /* PROKeyValueObservation.m in Sources */,
 				F31C9AD31B6E80DC00B322A9 /* ProsummaTests.swift in Sources */,
+				F3EC1B641BBED96000FCA590 /* RangeExtensions.swift in Sources */,
 				F35A561E1B7C448D00F3BC2C /* NSCharacterSetExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35C57FD1B6E99B300340013 /* PROKeyValueObservation.m in Sources */,
+				F3EC1B651BBED96000FCA590 /* RangeExtensions.swift in Sources */,
 				F35A561F1B7C448D00F3BC2C /* NSCharacterSetExtensions.swift in Sources */,
 				F35A561A1B7BA52400F3BC2C /* StringExtensions.swift in Sources */,
 			);
@@ -356,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35C57FE1B6E99B400340013 /* PROKeyValueObservation.m in Sources */,
+				F3EC1B661BBED96000FCA590 /* RangeExtensions.swift in Sources */,
 				F35A56201B7C448D00F3BC2C /* NSCharacterSetExtensions.swift in Sources */,
 				F35A561B1B7BA52400F3BC2C /* StringExtensions.swift in Sources */,
 			);
